@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product</title>
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <title>Home | Comfy</title>
+
+    <link rel="stylesheet" href="./src/css/styles.css" />
 </head>
 <body>
-
-<nav class="navbar">
+<nav class="navbar page">
     <div class="nav-center">
-
         <div>
             <button class="toggle-nav">
                 <i class="fas fa-bars"></i>
@@ -37,37 +36,25 @@
                 </li>
             </ul>
         </div>
-
-        <img src="./src/images/logo-white.svg" class="nav-logo" alt="logo" />
-
+        <img src="./src/images/logo-black.svg" class="nav-logo" alt="logo" />
         <div class="toggle-container">
             <button class="toggle-cart">
                 <i class="fas fa-shopping-cart"></i>
             </button>
-            <span class="cart-item-count">0</span>
+            <span class="cart-item-count">1</span>
         </div>
     </div>
 </nav>
-
-<section class="hero">
-    <div class="hero-container">
-        <h1 class="text-slanted">
-            rest, relax, unwind
-        </h1>
-        <h3>Embrace your choices - we do</h3>
-        <a href="products.html" class="hero-btn">
-            show now
-        </a>
+<section class="page-hero">
+    <div class="section-center">
+        <h3 class="page-hero-title">Home / Single Product</h3>
     </div>
 </section>
-
 <div class="sidebar-overlay">
     <aside class="sidebar">
-
         <button class="sidebar-close">
             <i class="fas fa-times"></i>
         </button>
-
         <ul class="sidebar-links">
             <li>
                 <a href="index.html" class="sidebar-link">
@@ -90,7 +77,6 @@
         </ul>
     </aside>
 </div>
-
 <div class="cart-overlay">
     <aside class="cart">
         <button class="cart-close">
@@ -99,30 +85,45 @@
         <header>
             <h3 class="text-slanted">your bag</h3>
         </header>
-
         <div class="cart-items"></div>
-
         <footer>
             <h3 class="cart-total text-slanted">
-                total : 0
+                total : $12.99
             </h3>
             <button class="cart-checkout btn">checkout</button>
         </footer>
     </aside>
 </div>
-
-<section class="section featured">
-    <div class="title">
-        <h2><span>/</span> featured</h2>
+<section class="single-product">
+    <div class="section-center single-product-center">
+        <img
+                src="./src/images/main-bcg.jpeg"
+                class="single-product-img img"
+                alt=""
+        />
+        <article class="single-product-info">
+            <div>
+                <h2 class="single-product-title">couch</h2>
+                <p class="single-product-company text-slanted">
+                    by marcos
+                </p>
+                <p class="single-product-price">$30.00</p>
+                <div class="single-product-colors"></div>
+                <p class="single-product-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+                    modi? Minima libero doloremque necessitatibus! Praesentium
+                    recusandae quod nesciunt animi voluptatem!
+                </p>
+                <button class="addToCartBtn btn" data-id="id">
+                    add to cart
+                </button>
+            </div>
+        </article>
     </div>
-    <div class="featured-center section-center">
-        <h2 class="section-loading">
-            loading...
-        </h2>
-    </div>
-    <a href="products.html" class="btn">
-        all products
-    </a>
 </section>
+<div class="page-loading">
+    <h2>loading...</h2>
+</div>
+
 </body>
 </html>
